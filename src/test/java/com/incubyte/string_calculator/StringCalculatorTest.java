@@ -29,4 +29,11 @@ public class StringCalculatorTest {
     }
 
 
+    @Test
+    void shouldSupportNewLineAsDelimiter() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(11, calculator.add("1\n7,3"));
+    }
+
+
 }
