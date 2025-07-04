@@ -53,5 +53,12 @@ public class StringCalculatorTest {
         assertEquals(5, calculator.add("2,1001,3"));
     }
 
+    @Test
+    void shouldSupportDelimitersOfAnyLength() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.add("//[***]\n1***2***3"));
+    }
+
+
 
 }
