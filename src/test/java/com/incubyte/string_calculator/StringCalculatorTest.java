@@ -16,5 +16,10 @@ public class StringCalculatorTest {
         assertEquals(5, new StringCalculator().add("5"));
     }
 
+    @Test
+    void shouldReturnSumOfTwoNumbersSeparatedByComma() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(3, calculator.add("1,2"));
+    }
 
 }
