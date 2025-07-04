@@ -22,4 +22,11 @@ public class StringCalculatorTest {
         assertEquals(3, calculator.add("1,2"));
     }
 
+    @Test
+    void shouldReturnSumOfMultipleNumbersSeparatedByComma() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(10, calculator.add("1,2,3,4"));
+    }
+
+
 }
